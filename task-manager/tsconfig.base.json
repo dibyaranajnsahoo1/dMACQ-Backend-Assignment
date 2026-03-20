@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "composite": true,
+    "declarationMap": true,
+    "emitDeclarationOnly": true,
+    "importHelpers": true,
+    "isolatedModules": true,
+    "lib": ["es2022"],
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "noEmitOnError": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "es2022",
+    "customConditions": ["@org/source"],
+
+    "paths": {
+      "@task-manager/auth": ["auth/src/index.ts"],
+      "@task-manager/users": ["users/src/index.ts"],
+      "@task-manager/tasks": ["tasks/src/index.ts"],
+      "@task-manager/analytics": ["analytics/src/index.ts"],
+      "@task-manager/models": ["models/src/index.ts"],
+      "@task-manager/utils": ["utils/src/index.ts"],
+      "@task-manager/data-access": ["data-access/src/index.ts"]
+    }
+  }
+}
